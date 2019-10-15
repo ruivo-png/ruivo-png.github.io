@@ -1,3 +1,70 @@
+
+	body {
+		overflow: auto;
+		text-align: center;
+	}
+	
+
+	#thumbcontainer {
+		display: flex;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		width: 100%;
+		-webkit-animation-name: fade; /* Safari 4.0 - 8.0 */
+		-webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+		animation-name: fade;
+		animation-duration: 2s;
+	}
+	
+	#thumbnailarea {
+		display: run-in;
+	}
+
+	.thumbnailwindow {
+		position: relative;
+		background-image: url('mockup_paint.png');
+		background-repeat: no-repeat;
+		background-color: #020216;
+		background-size: cover;
+		width: 392px;
+		height: 429px;
+		display: inline-block;
+		margin: 15px;
+		border: 2px solid #95560f;				/* Cor da primeira borda da janela */
+		outline: 1px solid #e28112;				/* Cor da segunda borda da janela */
+	}
+	
+	.thumbnailimage {
+		position: absolute;
+		top:27px;
+		left: 70px;
+		background-repeat: no-repeat;
+		background-color: #020216;
+		width: 300px;
+		height: 300px;
+		background-size: cover;
+	}
+	
+
+	.thumbnailtop {
+		top: 0px;
+		left: 0;
+		max-width: 392px;
+		height: 18px;
+		background-color: #e28112;				/* Cor da barra do topo */
+		text-align: left;
+		color: #fff;							/* Cor do texto da barra */
+		padding: 0px 0px 4px 7px;	/* top right bottom left */
+		font-family: silkscreennormal;		/* Fonte do texto da barra */
+		font-size: 13pt;
+	}
+
+
+
+
+	/* versão antiga */
+
 	#thumbnailsbox {
 		overflow: auto;
 		width: 100%;
@@ -59,10 +126,14 @@
 		overflow: auto;
 		left: 5%;
 		top: 18%;
-		width: 220px;
-		height: 120px;
+		width: 230px;
+		height: 175px;
 		overflow: hidden;
 		text-align: center;
+		-webkit-animation-name: fade; /* Safari 4.0 - 8.0 */
+		-webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+		animation-name: fade;
+		animation-duration: 0.5s;
 	}
 	
 	#origfantop {
