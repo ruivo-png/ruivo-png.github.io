@@ -9,6 +9,8 @@
 		<meta name = "description"	content = "Portfolio" />
 	
 		<link rel = "stylesheet" type="text/css" href="app.css" />
+		<link rel = "stylesheet" type="text/css" href="artes_thumb.css" />
+	
 	
 		<script type = "text/javascript" src = "app.js">
 		</script>
@@ -17,240 +19,81 @@
 		
 		<link href="https://fonts.googleapis.com/css?family=Arizonia" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<link href="fonts/PressStart2P-Regular.ttf" rel="stylesheet">
 		
 		
 	</head>
-	<body>
-		<!-- TOPO -->
-		<div id ="parallax">
-		</div>
+	<body oncontextmenu="return false;">
 		
-		
-		<div id = "topowrapper">
-			<div id = "topo">
-				<div id = "logo">
-					LOGO AQUI
-				</div>
-				
-				<div id = "titulo">
-					<h1>Acervo de Museus</h1>
-				</div>
-				
-				<div id = "nav">
-				<a href="#teste1">HOME</a> — <a href="#teste2">MUSEUS</a> — <a href="#teste3">SOBRE</a>
-				</div>
-				
-				<div id = "local">
-					<form>
-						<select id="estado" name="estado">
-							<option value="rj">Rio de Janeiro</option>
-							<option value="sp">São Paulo</option>
-							<option value="mg">Minas Gerais</option>
-							<option value="none">— Não filtrar —</option>
-						</select>
-					</form>
-				</div>
-			</div>
+		<div id = "container">
 			
-		<!-- COLUNA2 -->
-		<div id = "coluna2wrapper" class = "coluna2">
-			<div id = "coluna2">
-				<div id = "coluna2body">
-				<a name="teste1"></a>
-					<img src="img\MAM.jpg" class = "imgcoluna2"><br />
-						<div id = "coluna2texto">
-							
-						
-							<h1>Museu do Amanhã</h1>
-							
-							<h2>
-								Praça Mauá, 1<br>
-								Centro, Rio de Janeiro - RJ, 20081-240
-							<br>
-							
-							</h2>
-							 <font style ="font-size: 11pt;">
-								<a href = "https://museudoamanha.org.br/">https://museudoamanha.org.br/</a><br>
-							</font>
-							<br>
-								<center>
-								<table style="float: center; width: 300px;">
-								  <tr>
-									<td>Segunda-feira</td>
-									<td>FECHADO</td>
-								  </tr>
-								  <tr>
-									<td>Terça-feira</td>
-									<td>10:00 – 17:00</td> 
-								  </tr>
-								  <tr>
-									<td>Quarta-feira</td>
-									<td>10:00 – 17:00</td>
-								  </tr>
-								  <tr>
-									<td>Quinta-feira</td>
-									<td>10:00 – 17:00</td>
-								  </tr>
-								<tr>
-									<td>Sexta-feira</td>
-									<td>10:00 – 17:00</td>
-								  </tr>
-								<tr>
-									<td>Sábado</td>
-									<td>10:00 – 17:00</td>
-								  </tr>
-								<tr>
-									<td>Domingo</td>
-									<td>10:00 – 17:00</td>
-								  </tr>
-								</table>
-								</center>
-								
-							
-							
+			<div id = "startingwindow">
+			
+				
+						<div id = "top">
+							<!-- NOME DA JANELA -->
+							<div style = "padding-top: 2px; float: left;">
+								ruivo.png
+							</div>
+							<!-- BOTÕES TOPO -->
+							<div style = "float: right; margin-right: 12px; margin-top: 5px;">
+								<img src = "img/close.png" style = "float: right; margin-left: 2px;" />
+								<img src = "img/maximize.png" style = "float: right;" />
+								<img src = "img/minimize.png" style = "float: right;" />
+							</div>
 						</div>
-				<!--
-				<a name="teste2"></a>
-					<img src="img\MNBA.jpeg" class = "imgcoluna2"><br />
-						<div id = "coluna2texto">
+		
+				<div id = "startingimage">
+					<img src = "placeholdervertical.png" style = "float: right; display: none;" />
+				</div>
 						
-							<h1>Museu Nacional de Belas Artes</h1>
-							
-							<h2>
-								Av. Rio Branco, 199<br>
-								Centro, Rio de Janeiro - RJ, 20040-008<br>
-							<br>
-							</h2>
-							 <font style ="font-size: 11pt;">
-								<a href = "http://mnba.gov.br/portal/">http://mnba.gov.br/portal/</a><br>
-							</font>
-							<br>
-								<center>
-								<table style="float: center; width: 300px;">
-								  <tr>
-									<td>Segunda-feira</td>
-									<td>FECHADO</td>
-								  </tr>
-								  <tr>
-									<td>Terça-feira</td>
-									<td>10:00 – 17:00</td> 
-								  </tr>
-								  <tr>
-									<td>Quarta-feira</td>
-									<td>10:00 – 17:00</td>
-								  </tr>
-								  <tr>
-									<td>Quinta-feira</td>
-									<td>10:00 – 17:00</td>
-								  </tr>
-								<tr>
-									<td>Sexta-feira</td>
-									<td>10:00 – 17:00</td>
-								  </tr>
-								<tr>
-									<td>Sábado</td>
-									<td>13:00 – 17:00</td>
-								  </tr>
-								<tr>
-									<td>Domingo</td>
-									<td>13:00 – 17:00</td>
-								  </tr>
-								</table>
-								</center>
-								
-							
-							
+				<div id = "startingcolumn">
+					<div style = "font-family: silkscreenbold; font-size: 40pt; color: #e28112; max-width:70%;">
+						Gabriella Ruivo Lima
+					</div>
+					<div style = "font-family: Segoe UI; font-size: 12pt; color: #DDD; paddind-top: 10px;">
+					Rio de Janeiro based artist. Welcome to my portfolio!<br><br>
+					</div>
+					
+					<button class="button">Illustration</button>
+					<button class="button">Design</button>
+					<button class="button">Animation</button>
+					<button class="button">Sketches</button>
+					<button class="button" disabled>Comics [soon!]</button>
+					<button class="button" disabled>Pixel art [soon!]</button>
+					
+					<br><br><br>
+					+ about e contact;
+				</div>
+				
+				
+			</div>
+			
+			
+			<div id = "languageswindow" class = "window">
+			
+			
+			
+						<div id = "top">
+							<!-- NOME DA JANELA -->
+							<div style = "padding-top: 2px; float: left;">
+								languages.exe
+							</div>
+							<!-- BOTÕES TOPO -->
+							<div style = "float: right; margin-right: 12px; margin-top: 5px;">
+								<img src = "img/close.png" style = "float: right; margin-left: 2px;" />
+								<img src = "img/maximize.png" style = "float: right;" />
+								<img src = "img/minimize.png" style = "float: right;" />
+							</div>
 						</div>
-						-->
-				</div>
+			<br>
+				<button class="window languagesbutton">Português</button><br><br>
+				<button class="window languagesbutton">English</button>
+				
+				<br>
 			</div>
 		</div>
 			
-			
-			
-			
-		</div>
-		
-		<!-- COLUNA1 PRIMEIRA -->
-		<div id = "coluna1wrapper">
-			<div id = "coluna1" class = "coluna1">
-				<div id = "coluna1body">
-					<img src="img\MAM02.jpg" class = "imgcoluna1"><br />
-						<div id = "coluna1texto">
-							<div class = "data">A B R<br /><b>0 1</b><br />——— <font style="font-size: 8pt; line-height: 3;">até</font> ———<br />O U T<br /><b>1 5</b></div>
-							
-							<h1>Pratodomundo - Comida para 10 bilhões</h1><br />
-							
-							<div class="aspas">''</div>
-							<blockquote>
-								<b>Pratodomundo</b> nos apresenta algumas das alternativas na busca por menos desigualdade e mais resultados positivos na preservação da nossa biodiversidade, desde projetos para o cultivo de alimentos em desertos e tundras até o desenvolvimento de sensores para otimizar o uso da água nas lavouras, passando pela popularização de vegetais comestíveis menos conhecidos.
-								<br>
-								— <a href = "https://museudoamanha.org.br/pt-br/exposicao-temporaria-do-museu-do-amanha-pratodomundo">Página do museu</a>
-							</blockquote>
-							
-							
-							
-							
-							
-							
-							</div>
-				</div>
-			</div>
-		</div>
-		
-		<!-- COLUNA1 SEGUNDA -->
-		<div id = "coluna1wrapperA">
-			<div id = "coluna1A" class = "coluna1">
-				<div id = "coluna1bodyA">
-					<img src="img\MNBA01.png" class = "imgcoluna1"><br />
-						<div id = "coluna1textoA">
-							<div class = "data">M A I<br /><b>0 7</b><br />——— <font style="font-size: 8pt; line-height: 3;">até</font> ———<br />J U N<br /><b>0 6</b></div>
-							<h1>CURSO DE HISTÓRIA DA ARTE: A Paisagem na Arte Brasileira Século XIX</h1><br />
-							
-							<div class="aspas">''</div>
-							<blockquote>
-								O Curso tem como objetivo apresentar um panorama da produção pictórica da paisagem oitocentista, tendo por iconografia o acervo do MNBA.
-								<br>
-								— <a href = "http://mnba.gov.br/portal/imprensa/novidades-do-museu/179-curso-de-hist%C3%B3ria-de-arte-no-mnba.html">Página do museu</a>
-							</blockquote>
-	
-							
-							</div>
-				</div>
-			</div>
-		</div>
-		
-		
-		<!-- COLUNA1 TERCEIRA -->
-		<div id = "coluna1wrapperB">
-			<div id = "coluna1B" class = "coluna1">
-				<div id = "coluna1bodyB">
-					<img src="img\MAR.jpg" class = "imgcoluna1"><br />
-						<div id = "coluna1textoB">
-							<div class = "data">A B R<br /><b>1 3</b><br />——— <font style="font-size: 8pt; line-height: 3;">até</font> ———<br />A G O<br /><b>2 5</b></div>
-							<h1>Rosana Paulino: A costura da Memória</h1><br />
-							
-							<div class="aspas">''</div>
-							<blockquote>
-								O Museu de Arte do Rio – MAR inaugura no dia 13 de abril a exposição <b>“Rosana Paulino: A Costura da Memória”</b>. Após temporada de sucesso na Pinacoteca, em São Paulo, a maior individual da artista já realizada no Brasil chega à cidade com 140 obras produzidas ao longo dos seus 25 anos de carreira. Assinada por Valéria Piccoli e Pedro Nery, curadores do museu paulistano, a mostra reúne esculturas, instalações, gravuras, desenhos e outros suportes, que evidenciam a busca da artista no enfrentamento com questões sociais, destacando o lugar da mulher negra na sociedade brasileira.
-								<br>
-								— <a href = "https://www.museudeartedorio.org.br/pt-br/exposicoes/atuais?exp=5655">Página do museu</a>
-							</blockquote>
-							
-							
-							
-							
-							
-							
-							</div>
-				</div>
-			</div>
-		</div>
-		
-		
-		
-		
-		
 		
 	<br />
 	<br />
