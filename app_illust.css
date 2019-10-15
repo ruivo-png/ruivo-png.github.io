@@ -1,9 +1,39 @@
 
 	body {
-		overflow: auto;
+		overflow-y: auto;
+		overflow-x: hidden;
 		text-align: center;
 	}
 	
+	#coat {
+		display: flex;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		position: absolute;
+		margin-top: -200px;
+		margin-left: -200px;
+		background-color: black;
+		opacity: 0;
+		z-index: 0;
+		width: 150%;
+		height: 150%;
+	}
+	
+	#X {
+		position: absolute;
+		top: 30px;
+		right: 30px;
+		color: #CCC;
+		font-family: silkscreenbold;
+		font-size: 40pt;
+		z-index: 101;
+		opacity: 0;
+	}
+	
+	#X:hover {
+		text-decoration: none;
+	}
 
 	#thumbcontainer {
 		display: flex;
@@ -33,6 +63,17 @@
 		margin: 15px;
 		border: 2px solid #95560f;				/* Cor da primeira borda da janela */
 		outline: 1px solid #e28112;				/* Cor da segunda borda da janela */
+		
+		-webkit-transition-duration: 0.2s; /* Safari */
+		transition-duration: 0.2s;
+		cursor: pointer;
+		
+	}
+	
+	.thumbnailwindow:hover {
+		opacity: 0.8;
+		
+		
 	}
 	
 	.thumbnailimage {
