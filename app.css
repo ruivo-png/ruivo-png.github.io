@@ -68,8 +68,300 @@
 						  color: #333;
 						  letter-spacing: 1px;
 					}
-				
-					
+	
+	@font-face {
+		font-family: 'press_start_2pregular';
+		src: url('fonts/pressstart2p-regular-webfont.woff2') format('woff2'),
+			 url('fonts/pressstart2p-regular-webfont.woff') format('woff');
+		font-weight: normal;
+		font-style: normal;
+}
+	
+	@font-face {
+    font-family: 'SH Pinscher Regular';
+    src: url('fonts/shpinscher-regular.woff2') format('woff2'),
+         url('fonts/shpinscher-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+	@font-face {
+    font-family: 'silkscreennormal';
+    src: url('fonts/slkscr.woff2') format('woff2'),
+         url('fonts/slkscr.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'silkscreenbold';
+    src: url('fonts/slkscrb.woff2') format('woff2'),
+         url('fonts/slkscrb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'silkscreen_expandednormal';
+    src: url('fonts/slkscre.woff2') format('woff2'),
+         url('fonts/slkscre.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'silkscreen_expandedbold';
+    src: url('fonts/slkscreb.woff2') format('woff2'),
+         url('fonts/slkscreb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+	
+
+	html, body {
+		height: 100%;
+		color: #bbb;						/* Cor do texto principal */
+		background-color: #060B27;			/* Cor do fundo */
+		overflow: hidden;
+	}
+	
+	img {
+		margin: none;
+	}
+	
+	#container {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+	}
+	
+	
+	
+	#startingwindow {
+		display: inline-block;
+		overflow:hidden;
+		position: relative;
+		top: -5%;
+		max-width: 800px;
+		min-width: 60%;
+		max-height: 600px;
+		min-height: 80%;
+		background-color: #020216;				/* Cor do fundo da janela principal */
+		
+		border: 2px solid #300542;				/* Cor da primeira borda da janela */
+		outline: 1px solid #721381;				/* Cor da segunda borda da janela */
+		
+		-webkit-animation-name: fade; /* Safari 4.0 - 8.0 */
+		-webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+		animation-name: fade;
+		animation-duration: 2s;
+	}
+	
+	.window {
+		background-color: #020216;				/* Cor do fundo da janela principal */
+		
+		border: 2px solid #300542;				/* Cor da primeira borda da janela */
+		outline: 1px solid #721381;				/* Cor da segunda borda da janela */
+	}
+	
+	
+	#top {
+		top: 0px;
+		left: 0;
+		width: 100%;
+		height: 18px;
+		background-color: #721381;				/* Cor da barra do topo */
+		text-align: left;
+		color: #fff;							/* Cor do texto da barra */
+		padding: 0px 0px 4px 7px;	/* top right bottom left */
+		font-family: silkscreennormal;		/* Fonte do texto da barra */
+		font-size: 13pt;
+	}
+		
+	
+
+	#startingimage img {
+		position: relative;
+		padding: 20px;
+		float: right;
+		
+		border: 1px solid #2781B3;
+		width: 20%;
+	}
+	
+	#startingcolumn {
+		position: absolute;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		float: left;
+		text-align: left;
+		min-width: 10%;
+		min-height: 60%;
+		max-height: 100%;
+		/*border-right: 2px solid #2781B3;*/
+		padding: 50px 0 50px 50px;	/* top right bottom left */
+	}
+	
+	
+	.button, .button:visited, .button:link {
+		background-color: transparent;
+		border: none;
+		color: #2781B3;
+		padding: 6px 20px 6px 20px;
+		text-align: center;
+		text-decoration: none;
+		font-family: silkscreennormal;
+		font-size: 20px;
+		display: block;
+		margin: 10px 2px;
+		border-radius: 20px 0 20px 0;
+		border: 2px solid #2781B3;
+		
+		
+		-webkit-transition-duration: 0.4s; /* Safari */
+		transition-duration: 0.4s;
+		cursor: pointer;
+	}
+	
+	.button:hover {
+		background-color: #2781B3;
+		color: #020216;
+		border-color: #020216;
+		letter-spacing: 10px;
+	}
+	
+	.button:disabled, button[disabled]{
+		border-color: #777;
+		color: #777;
+		background-color: transparent;
+		letter-spacing: 0;
+		cursor: no-drop;
+		
+	}
+	
+	.button:active {
+		border-color: #020216;
+		color: #2781B3;
+		background-color: transparent;
+		-webkit-transition-duration: 0.1s; /* Safari */
+		transition-duration: 0.1s;
+		
+	}
+	
+	button:focus {outline:0;}
+	
+	
+	#languageswindow {
+		position: absolute;
+		overflow: auto;
+		right: 15%;
+		bottom: 5%;
+		width: 220px;
+		height: 120px;
+		overflow: hidden;
+		text-align: center;
+	}
+	
+	#languagestop {
+		top: 0px;
+		left: 0;
+		width: 100%;
+		height: 18px;
+		background-color: #721381;				/* Cor da barra do topo */
+		text-align: left;
+		color: #fff;							/* Cor do texto da barra */
+		padding: 0px 0px 4px 7px;	/* top right bottom left */
+		font-family: silkscreennormal;		/* Fonte do texto da barra */
+		font-size: 13pt;
+	}
+	
+	.languagesbutton {
+		color: #bbb;
+		text-align: center;
+		border-top: 1px solid #721381;
+		border-left: 1px solid #721381;	
+		border-right: 1px solid #CCC;	
+		border-bottom: 1px solid #CCC;
+	}
+	
+	.languagesbutton:hover {
+		border-top: 1px solid #CCC;
+		border-left: 1px solid #CCC;	
+		border-right: 1px solid #721381;	
+		border-bottom: 1px solid #721381;
+		
+	}
+	
+	.languagesbutton:active {
+		border-top: 1px solid #721381;
+		border-left: 1px solid #721381;	
+		border-right: 1px solid #CCC;	
+		border-bottom: 1px solid #CCC;
+		background-color: #1d0736;
+		
+	}
+	
+	
+	
+	
+	
+	
+	/* coisas antigas */
+	
+
+
+
+	.arrow-up {
+		  position: relative;
+		  width: 0; 
+		  height: 0; 
+		  border-left: 150px solid transparent;		/* extensão à esquerda */
+		  border-right: 150px solid transparent;	/* extensão à direita */
+		  
+		  border-bottom: 260px solid black; 		/* altura */
+		  display: inline-block;
+	}
+
+
+	.arrow-down {
+		  position: relative;
+		  width: 0; 
+		  height: 0; 
+		  border-left: 150px solid transparent;		/* extensão à esquerda */
+		  border-right: 150px solid transparent;		/* extensão à direita */
+		  
+		  border-top: 260px solid black;				/* altura */
+		  display: inline-block;
+}
+
+	/* mexer nos tamanhos destas merdas de triângulo com js */
+	
+	#thumbnails {
+					position: relative;
+					width: 0;
+					height: 0;
+					top: 10%;
+					left: 5%;
+	}
+	
+	
+	
 	/* TOPO */
 	
 	#parallax {
@@ -393,31 +685,6 @@
 					}				
 	
 	
-	/* width */
-	.coluna2::-webkit-scrollbar {
-	  width: 10px;
-	  -webkit-animation-name: fade; /* Safari 4.0 - 8.0 */
-						-webkit-animation-duration: 0.7s; /* Safari 4.0 - 8.0 */
-						animation-name: fade;
-						animation-duration: 0.7s;
-	
-	}
-
-	/* Track */
-	.coluna2::-webkit-scrollbar-track {
-	  border-radius: 5px;
-	}
-	 
-	/* Handle */
-	.coluna2::-webkit-scrollbar-thumb {
-	  background-color: #372f2d;
-	}
-
-	/* Handle on hover */
-	.coluna2::-webkit-scrollbar-thumb:hover {
-	  background-color: #372f2d;
-	  
-	}
 	
 	
 	/* width */
@@ -437,12 +704,12 @@
 	 
 	/* Handle */
 	::-webkit-scrollbar-thumb {
-	  background-color: #372f2d;
+	  background-color: #e28112;
 	}
 
 	/* Handle on hover */
 	::-webkit-scrollbar-thumb:hover {
-	  background-color: #372f2d;
+	  background-color: #e28112;
 	  
 	}
 		
