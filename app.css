@@ -303,6 +303,7 @@
 		border-right: 1px solid #CCC;	
 		border-bottom: 1px solid #CCC;
 		margin-bottom: 8px;
+		outline: 1px solid #721381;
 	}
 	
 	.languagesbutton:hover {
@@ -310,7 +311,7 @@
 		border-left: 1px solid #CCC;	
 		border-right: 1px solid #721381;	
 		border-bottom: 1px solid #721381;
-		
+		outline: 1px solid #721381;
 	}
 	
 	.languagesbutton:active {
@@ -319,7 +320,7 @@
 		border-right: 1px solid #CCC;	
 		border-bottom: 1px solid #CCC;
 		background-color: #1d0736;
-		
+		outline: 1px solid #721381;
 	}
 	
 	
