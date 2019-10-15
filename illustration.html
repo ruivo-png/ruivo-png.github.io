@@ -25,15 +25,16 @@
 	</head>
 	<body oncontextmenu="return false;">
 		
-		<div id = "container">
+		<div id = "thumbcontainer">
 			
-			<div id = "startingwindow">
+			<div id = "thumbnailarea">
 			
+				<div class = "thumbnailwindow">
 				
-						<div id = "top">
+						<div class = "thumbnailtop">
 							<!-- NOME DA JANELA -->
 							<div style = "padding-top: 2px; float: left;">
-								original.zip
+								narancia.png
 							</div>
 							<!-- BOTÕES TOPO -->
 							<div style = "float: right; margin-right: 12px; margin-top: 5px;">
@@ -42,10 +43,54 @@
 								<img src = "img/minimize.png" style = "float: right;" />
 							</div>
 						</div>
+						<div class = "thumbnailimage" style = "background-image: url('thumbs/thumb_narancia.png');"></div>
+				</div>
+				
+				<div class = "thumbnailwindow">
+				
+						<div class = "thumbnailtop">
+							<!-- NOME DA JANELA -->
+							<div style = "padding-top: 2px; float: left;">
+								mother3.png
+							</div>
+							<!-- BOTÕES TOPO -->
+							<div style = "float: right; margin-right: 12px; margin-top: 5px;">
+								<img src = "img/close.png" style = "float: right; margin-left: 2px;" />
+								<img src = "img/maximize.png" style = "float: right;" />
+								<img src = "img/minimize.png" style = "float: right;" />
+							</div>
+						</div>
+						<div class = "thumbnailimage" style = "background-image: url('illusts/mother3.png');"></div>
+				</div>
+				
+				<div class = "thumbnailwindow">
+				
+						<div class = "thumbnailtop">
+							<!-- NOME DA JANELA -->
+							<div style = "padding-top: 2px; float: left;">
+								seila.png
+							</div>
+							<!-- BOTÕES TOPO -->
+							<div style = "float: right; margin-right: 12px; margin-top: 5px;">
+								<img src = "img/close.png" style = "float: right; margin-left: 2px;" />
+								<img src = "img/maximize.png" style = "float: right;" />
+								<img src = "img/minimize.png" style = "float: right;" />
+							</div>
+						</div>
+						<div class = "thumbnailimage" style = "background-image: url('illusts/holymother.jpg');"></div>
+				</div>
+				
+				
+				
+				
+			</div>
+			
+				
+						
 		
-		<!-- OBS: botar dois botões logo abaixo do topo, separando entre ORIGINAL e FANART -->
 		
 		
+		<!--
 				<div id = "thumbnailsbox">
 					<div class = "thumbborder"><div class = "thumbnails">
 						<img src = "illusts/narancia.png"	style = "margin-top: -20px;" />
@@ -57,9 +102,6 @@
 						<img src = "illusts/holymother.jpg"/>
 					</div></div>
 					<div class = "thumbborder"><div class = "thumbnails">
-						<img src = ""/>
-					</div></div>
-					<div class = "thumbborder"><div class = "thumbnails">
 						<img src = "illusts/narancia.png"/>
 					</div></div>
 					<div class = "thumbborder"><div class = "thumbnails">
@@ -70,7 +112,11 @@
 					</div></div>
 					<div class = "thumbborder"><div class = "thumbnails">
 						<img src = "illusts/narancia.png"/>
-					</div></div><div class = "thumbborder"><div class = "thumbnails">
+					</div></div>
+					<div class = "thumbborder"><div class = "thumbnails">
+						<img src = "illusts/narancia.png"/>
+					</div></div>
+					<div class = "thumbborder"><div class = "thumbnails">
 						<img src = "illusts/narancia.png"/>
 					</div></div>
 					<div class = "thumbborder"><div class = "thumbnails">
@@ -83,7 +129,7 @@
 						<img src = "illusts/narancia.png"/>
 					</div></div>
 				</div>
-				
+				-->
 				
 			</div>
 			
@@ -95,7 +141,7 @@
 						<div id = "origfantop">
 							<!-- NOME DA JANELA -->
 							<div style = "padding-top: 2px; float: left;">
-								illustration.exe
+								illustration.zip
 							</div>
 							<!-- BOTÕES TOPO -->
 							<div style = "float: right; margin-right: 12px; margin-top: 5px;">
@@ -108,6 +154,8 @@
 				<button class="window origfanbutton" onclick = "window.location.href='index_ptbr.html'">Original</button><br>
 				<button class="window origfanbutton" onclick = "window.location.href='index.html'">Fanart</button>
 				
+				<br><br>
+				<button class="window languagesbutton" onclick = "window.location.href='index.html'">Back</button>
 				<br>
 			</div>
 		</div>
