@@ -24,12 +24,21 @@
 		
 	</head>
 	<body oncontextmenu="return false;">
+	
+		<div id = "coat">
+			<img id = "imagemampliada" style = "margin-left: -250px;" />
+		</div>
+		<div id = "X"><a onclick="fechar()" style = "text-decoration: none;">X</a></div>
+		
+		
+		
+		
 		
 		<div id = "thumbcontainer">
 			
 			<div id = "thumbnailarea">
 			
-				<div class = "thumbnailwindow">
+				<div class = "thumbnailwindow" onclick = "ampliar('narancia')">
 				
 						<div class = "thumbnailtop">
 							<!-- NOME DA JANELA -->
@@ -43,10 +52,11 @@
 								<img src = "img/minimize.png" style = "float: right;" />
 							</div>
 						</div>
+							<!-- THUMBNAIL -->
 						<div class = "thumbnailimage" style = "background-image: url('thumbs/thumb_narancia.png');"></div>
 				</div>
 				
-				<div class = "thumbnailwindow">
+				<div class = "thumbnailwindow" onclick = "ampliar('mother3')">
 				
 						<div class = "thumbnailtop">
 							<!-- NOME DA JANELA -->
@@ -60,10 +70,11 @@
 								<img src = "img/minimize.png" style = "float: right;" />
 							</div>
 						</div>
+							<!-- THUMBNAIL -->
 						<div class = "thumbnailimage" style = "background-image: url('illusts/mother3.png');"></div>
 				</div>
 				
-				<div class = "thumbnailwindow">
+				<div class = "thumbnailwindow" onclick = "ampliar('holymother')">
 				
 						<div class = "thumbnailtop">
 							<!-- NOME DA JANELA -->
@@ -77,6 +88,7 @@
 								<img src = "img/minimize.png" style = "float: right;" />
 							</div>
 						</div>
+							<!-- THUMBNAIL -->
 						<div class = "thumbnailimage" style = "background-image: url('illusts/holymother.jpg');"></div>
 				</div>
 				
