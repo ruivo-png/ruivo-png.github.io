@@ -52,7 +52,9 @@
 	
 	#thumbnailarea {
 		display: run-in;
+		width: 80%;
 	}
+	
 
 	.thumbnailwindow {
 		position: relative;
@@ -73,10 +75,21 @@
 		
 	}
 	
-	.thumbnailwindow:hover {
-		opacity: 0.8;
-		
-		
+	.thumbnaildesc {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: flex-end;
+		text-align: center;
+		justify-content: center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		color: #fff;
+		font-size: 15pt;
+		font-family: Roboto;
+		-webkit-transition-duration: 0.2s; /* Safari */
+		transition-duration: 0.2s;
 	}
 	
 	.thumbnailimage {

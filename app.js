@@ -7,11 +7,30 @@ var previousBGColor = String(document.body.style.backgroundColor),
 window.onload = function() {
 	
 	
-	
+	thumbnails();
 }
 
-function ampliar (i) {
 
+function thumbnails() {
+	document.getElementsByClassName("thumbnailimage")[0].style.backgroundImage = thumb01;
+	document.getElementsByClassName("thumbnailimage")[1].style.backgroundImage = thumb02;
+	document.getElementsByClassName("thumbnailimage")[2].style.backgroundImage = thumb03;
+	document.getElementsByClassName("thumbnailimage")[3].style.backgroundImage = thumb04;
+}
+
+
+function desc(desenho) {
+		if (desenho == '01')
+			document.getElementsByClassName("desc")[0].innerHTML = desc01;
+		if (desenho == '02')
+			document.getElementsByClassName("desc")[1].innerHTML = desc02;
+		if (desenho == '03')
+			document.getElementsByClassName("desc")[2].innerHTML = desc03;
+		if (desenho == '04')
+			document.getElementsByClassName("desc")[3].innerHTML = desc04;
+	}
+
+function ampliar (i) {
 	document.getElementById("coat").style.width = "100%";
 	document.getElementById("coat").style.height = "100%";
 	
@@ -30,12 +49,14 @@ function ampliar (i) {
 	document.getElementById("X").style.opacity = "1";
 	
 	
-	if (i == "narancia") 
-		document.getElementById("imagemampliada").src = "illusts/narancia.png";
-	if (i == "mother3") 
-		document.getElementById("imagemampliada").src = "illusts/mother3.png";
-	if (i == "holymother") 
-		document.getElementById("imagemampliada").src = "illusts/holymother.jpg";
+	if (i == "01") 
+		document.getElementById("imagemampliada").src = full01;
+	if (i == "02") 
+		document.getElementById("imagemampliada").src = full02;
+	if (i == "03") 
+		document.getElementById("imagemampliada").src = full03;
+	if (i == "04") 
+		document.getElementById("imagemampliada").src = full04;
 }
 
 function fechar (){
@@ -47,4 +68,7 @@ function fechar (){
 	document.body.style.overflowY = "auto";
 	document.getElementById("origfanwindow").style.opacity = "1";
 	document.getElementById("thumbcontainer").style.opacity = "1";
+	
+	document.getElementById("imagemampliada").src = "";
 }
+
