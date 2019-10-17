@@ -12,14 +12,17 @@
 		<link rel = "stylesheet" type="text/css" href="app_illust.css" />
 	
 	
+		<script type = "text/javascript" src = "dados.js">
+		</script>
+	
 		<script type = "text/javascript" src = "app.js">
 		</script>
+		
+		
+		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		
 		
-		<link href="https://fonts.googleapis.com/css?family=Arizonia" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-		<link href="fonts/PressStart2P-Regular.ttf" rel="stylesheet">
 		
 		
 	</head>
@@ -38,9 +41,9 @@
 			
 			<div id = "thumbnailarea">
 			
-				<div class = "thumbnailwindow" onclick = "ampliar('narancia')">
+				<div class = "thumbnailwindow" onclick = "ampliar('01')"  onmouseover = "desc('01')">
 				
-						<div class = "thumbnailtop">
+						<div class = "thumbnailtop" >
 							<!-- NOME DA JANELA -->
 							<div style = "padding-top: 2px; float: left;">
 								jojo.png
@@ -53,10 +56,13 @@
 							</div>
 						</div>
 							<!-- THUMBNAIL -->
-						<div class = "thumbnailimage" style = "background-image: url('thumbs/thumb_narancia.png');"></div>
+						<div class = "thumbnailimage"></div>
+						
+							<!-- DESCRIÇÃO -->
+						<div class ="thumbnaildesc"><p class = "desc"></p></div>
 				</div>
 				
-				<div class = "thumbnailwindow" onclick = "ampliar('mother3')">
+				<div class = "thumbnailwindow" onclick = "ampliar('02')"  onmouseover = "desc('02')">
 				
 						<div class = "thumbnailtop">
 							<!-- NOME DA JANELA -->
@@ -71,10 +77,13 @@
 							</div>
 						</div>
 							<!-- THUMBNAIL -->
-						<div class = "thumbnailimage" style = "background-image: url('illusts/mother3.png');"></div>
+						<div class = "thumbnailimage"></div>
+						
+							<!-- DESCRIÇÃO -->
+						<div class ="thumbnaildesc"><p class = "desc"></p></div>
 				</div>
 				
-				<div class = "thumbnailwindow" onclick = "ampliar('holymother')">
+				<div class = "thumbnailwindow" onclick = "ampliar('03')"  onmouseover = "desc('03')">
 				
 						<div class = "thumbnailtop">
 							<!-- NOME DA JANELA -->
@@ -89,10 +98,32 @@
 							</div>
 						</div>
 							<!-- THUMBNAIL -->
-						<div class = "thumbnailimage" style = "background-image: url('illusts/holymother.jpg');"></div>
+						<div class = "thumbnailimage"></div>
+								
+							<!-- DESCRIÇÃO -->
+						<div class ="thumbnaildesc"><p class = "desc"></p></div>
 				</div>
 				
+				<div class = "thumbnailwindow" onclick = "ampliar('04')"  onmouseover = "desc('04')">
 				
+						<div class = "thumbnailtop">
+							<!-- NOME DA JANELA -->
+							<div style = "padding-top: 2px; float: left;">
+								seila.png
+							</div>
+							<!-- BOTÕES TOPO -->
+							<div style = "float: right; margin-right: 12px; margin-top: 5px;">
+								<img src = "img/close_laranja.png" style = "float: right; margin-left: 2px; margin-right: -7px;" />
+								<img src = "img/maximize_laranja.png" style = "float: right;" />
+								<img src = "img/minimize_laranja.png" style = "float: right;" />
+							</div>
+						</div>
+							<!-- THUMBNAIL -->
+						<div class = "thumbnailimage"></div>
+						
+							<!-- DESCRIÇÃO -->
+						<div class ="thumbnaildesc"><p class = "desc"></p></div>
+				</div>
 				
 				
 			</div>
