@@ -100,11 +100,20 @@ function translate(language) {
 	if (lang == 0)	{
 		document.getElementById("txt_intro").innerHTML = index[0];
 		document.getElementById("txt_top_lang").innerHTML = index[2];
+		document.getElementById("txt_abtcontact").innerHTML = index[4];
+		//links
+		document.getElementById("txt_link_illusts").innerHTML = index[6];
+		document.getElementById("txt_link_animation").innerHTML = index[8];
+		
 	}
 		
 	if (lang == 1)	{
 		document.getElementById("txt_intro").innerHTML = index[1];
 		document.getElementById("txt_top_lang").innerHTML = index[3];
+		document.getElementById("txt_abtcontact").innerHTML = index[5];
+		//links
+		document.getElementById("txt_link_illusts").innerHTML = index[7];
+		document.getElementById("txt_link_animation").innerHTML = index[9];
 	}
 	
 	// ABOUT
@@ -142,10 +151,12 @@ function translate(language) {
 	// ABOUT
 	if (lang == 0)	{
 		document.getElementById("txt_actualabout").innerHTML = about[0];
+		document.getElementById("txt_top_actualabout").innerHTML = about[2];
 	}
 		
 	if (lang == 1)	{
 		document.getElementById("txt_actualabout").innerHTML = about[1];
+		document.getElementById("txt_top_actualabout").innerHTML = about[3];
 	}
 }	
 

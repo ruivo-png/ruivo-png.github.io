@@ -21,9 +21,9 @@
 						// actual about
 						
 							// english
-								about[0] = "Hey there, <b style = 'color: #2781B3;'>Gabriella Ruivo</b> here!<br><br>I'm a Brazilian Digital Media Design student at university PUC-Rio, currently in my 4th semester.<br><br>Forever drowned in <b>curiosity</b>, I consider myself an interdisciplinary kinda person. My heart beats both for art and technology, but though i seek to specialize in illustration and animation, I make a point to not limit my fascination to any field, and like to see them connecting. The world is too big and interesting!<br><br>This means I also have a <b>wide range of tastes</b>: my interests go from wholesome children's stories to the occasional psychological horror. I also have a thing for glitch art and old-school tech aesthetics, as it shows in this 90s/synthwave-esque page I've coded.<br><br>I strive to show my passion through my work, giving it my all, and am very adaptable. If you have any nice ideas, let's talk!";
+								about[0] = "Hey there, <b style = 'color: #2781B3;'>Gabriella Ruivo</b> here!<br><br>I'm a Brazilian Digital Media Design student at university PUC-Rio, currently in my 4th semester and an intern at <a href = 'http://www.icad.puc-rio.br/'>ICAD Games</a>. <br><br>Drowned in <b>curiosity</b>, I consider myself an interdisciplinary kinda person. My heart beats both for art and technology, but though i seek to specialize in illustration and animation, I make a point to not limit my fascination to any field, and like to see them connecting. The world is too big and interesting!<br><br>This means I also have a <b>wide range of tastes</b>: my interests go from wholesome children's stories to the occasional psychological horror. I also have a thing for glitch art and old-school tech aesthetics, as it shows in this 90s/synthwave-esque page I've coded.<br><br>I strive to show my passion through my work, giving it my all, and am very adaptable. If you have any nice ideas, let's talk!";
 							// portuguese
-								about[1] = "Hey, <b style = 'color: #2781B3;'>Gabriella Ruivo</b> aqui!<br><br>Sou estudante de Design de Mídia Digital na PUC-Rio, atualmente no meu quarto semestre.<br><br>Sempre afogada em <b>curiosidade</b>, eu me considero uma pessoa interdisciplinar. Meu coração bate para arte e tecnologia, e embora eu procure me especializar em ilustração e animação, não limito minha fascinação para nenhum campo, e gosto de vê-los se conectando. O mundo é grande e interessante demais!<br><br>Isso quer dizer que eu tenho uma <b>ampla gama de gostos</b>: meus interesses vão de histórias infantis até o ocasional horror psicológico. Também tenho algo por arte glitch e estéticas de tech retrô, como é possível ver nessa presente página anos 90/meio synthwave que codei.<br><br>Eu procuro mostrar minha paixão pelas coisas através do meu trabalho, dando meu melhor, e sou muito adaptável. Se você tiver alguma ideia, vamos trocar!";
+								about[1] = "Hey, <b style = 'color: #2781B3;'>Gabriella Ruivo</b> aqui!<br><br>Sou estudante de Design de Mídia Digital na PUC-Rio, atualmente no meu quarto semestre e estagiando no <a href = 'http://www.icad.puc-rio.br/'>ICAD Games</a>.<br><br>Afogada em <b>curiosidade</b>, eu me considero uma pessoa interdisciplinar. Meu coração bate para arte e tecnologia, e embora eu procure me especializar em ilustração e animação, não limito minha fascinação para nenhum campo, e gosto de vê-los se conectando. O mundo é grande e interessante demais!<br><br>Isso quer dizer que eu tenho uma <b>ampla gama de gostos</b>: meus interesses vão de histórias infantis até o ocasional horror psicológico. Também tenho algo por arte glitch e estéticas de tech retrô, como é possível ver nessa presente página anos 90/meio synthwave que codei.<br><br>Eu procuro mostrar minha paixão pelas coisas através do meu trabalho, dando meu melhor, e sou muito adaptável. Se você tiver alguma ideia, vamos trocar!";
 	
 	// !!!!!!!!!!!!!!!!
 	// AUTOMATIC TRANSLATIONS ENG & PTBR
@@ -39,12 +39,22 @@
 					// portuguese
 						index[3] = "idioma.exe";
 						
-						
+				// botão
+				
+					// english
+						index[4] = "About & Contact";
+					// portuguese
+						index[5] = "Sobre & Contato";
+				
+				
 				// links
 				
 					// english
-					
+						index[6] = "Illustrations";
+						index[8] = "Animation [soon!]";
 					// portuguese
+						index[7] = "Ilustracoes";
+						index[9] = "Animacao [em breve!]";
 						
 		// ILLUSTRATION
 		

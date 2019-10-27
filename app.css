@@ -1,7 +1,7 @@
 	a:link, a:visited { 
-						color: #000;
+						color: #e28112;
 						text-decoration: none;
-						font-weight: bold;
+						/*font-weight: bold;*/
 						cursor: auto;
 						text-align: left;
 						cursor: pointer;
@@ -409,7 +409,7 @@
 		left: 0;
 		width: 100%;
 		height: 18px;
-		background-color: #721381;				/* Cor da barra do topo */
+		background-color: #2781B3;				/* Cor da barra do topo */
 		text-align: left;
 		color: #fff;							/* Cor do texto da barra */
 		padding: 0px 0px 4px 7px;	/* top right bottom left */
@@ -428,9 +428,6 @@
 		max-height: 600px;
 		min-height: 60%;
 		background-color: #020216;				/* Cor do fundo da janela principal */
-		
-		border: 2px solid #300542;				/* Cor da primeira borda da janela */
-		outline: 1px solid #721381;				/* Cor da segunda borda da janela */
 		
 		-webkit-animation-name: fade; /* Safari 4.0 - 8.0 */
 		-webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
