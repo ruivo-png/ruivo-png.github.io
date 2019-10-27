@@ -4,7 +4,11 @@ var widthMAX = window.innerWidth,		// largura da parte de dentro da tela do nave
 var previousBGColor = String(document.body.style.backgroundColor),
 	previousBG = String(document.body.style.backgroundImage);
 	
-var lang;
+var lang = -1;
+
+window.onload = function() {
+	currentPage('index', lang);
+}
 
 function currentPage(i, language) {
 	if (i == 'index') {
