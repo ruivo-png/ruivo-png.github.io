@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang = "pt-br">
 	<head>
 	
@@ -8,105 +8,572 @@
 		<meta name = "author"		content = "Gabriella Ruivo Lima" />
 		<meta name = "description"	content = "Portfolio" />
 	
+		
 		<link rel = "stylesheet" type="text/css" href="app.css" />
 	
-	
+		<script type = "text/javascript" src = "dados.js">
+		</script>
 		<script type = "text/javascript" src = "app.js">
 		</script>
+		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		
-		
-		<link href="https://fonts.googleapis.com/css?family=Arizonia" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-		<link href="fonts/PressStart2P-Regular.ttf" rel="stylesheet">
-		
-		
+		<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 	</head>
-	<body oncontextmenu="return false;">
+	<body oncontextmenu="return false;" onload = "currentPage('index', lang);">
 		
-		<div id = "container">
-			
-			<div id = "startingwindow">
-			
-				
-						<div id = "top">
-							<!-- NOME DA JANELA -->
-							<div style = "padding-top: 2px; float: left;">
-								ruivo.png
-							</div>
-							<!-- BOTÕES TOPO -->
-							<div style = "float: right; margin-right: 12px; margin-top: 5px;">
-								<img src = "img/close.png" style = "float: right; margin-left: 2px;" />
-								<img src = "img/maximize.png" style = "float: right;" />
-								<img src = "img/minimize.png" style = "float: right;" />
-							</div>
-						</div>
 		
-				<div id = "startingimage">
-					<img src = "placeholdervertical.png" style = "float: right; display: none;" />
-				</div>
-						
-				<div id = "startingcolumn">
-					<div style = "font-family: silkscreenbold; font-size: 40pt; color: #e28112; max-width:70%;margin-bottom: 30px">
-						Gabriella Ruivo Lima
-					</div>
-					<div style = "font-family: Segoe UI; font-size: 12pt; color: #DDD; paddind-top: 10px;">
-					Rio de Janeiro based artist. Welcome to my portfolio!<br><br>
-Under construction!!<br><br>
-					</div>
-					
-					<button class="button">Illustration</button>
-					<button class="button">Design</button>
-					<button class="button">Animation</button>
-					<button class="button">Sketches</button>
-					<button class="button" disabled>Comics [soon!]</button>
-					<button class="button" disabled>Pixel art [soon!]</button>
-					
-					<br><br><br>
-				</div>
-				
-				
-			</div>
-			
-			
-			<div id = "languageswindow" class = "window">
-			
-			
-			
-						<div id = "top">
-							<!-- NOME DA JANELA -->
-							<div style = "padding-top: 2px; float: left;">
-								languages.exe
-							</div>
-							<!-- BOTÕES TOPO -->
-							<div style = "float: right; margin-right: 12px; margin-top: 5px;">
-								<img src = "img/close.png" style = "float: right; margin-left: 2px;" />
-								<img src = "img/maximize.png" style = "float: right;" />
-								<img src = "img/minimize.png" style = "float: right;" />
-							</div>
-						</div>
-				<br>
-				<button class="window languagesbutton">Português</button><br>
-				<button class="window languagesbutton">English</button>
-				
-				
-				
-				
-				<br>
-			</div>
-		</div>
-			
 		
-	<br />
-	<br />
-	<br />
-	<br />
-	<br />
-	<br />
-	<br />
-	<br />
-	<br />
-	<br />
-	<br />
+			<!-- PAGE: INDEX -->
+		
+			<div id = "index_container">
 	
+				<div id = "startingwindow">
+				
+					
+							<div id = "top">
+								<!-- NOME DA JANELA -->
+								<div style = "padding-top: 2px; float: left;">
+									G:\Gabriella_Ruivo\Portfolio.exe
+								</div>
+								<!-- BOTÕES TOPO -->
+								<div style = "float: right; margin-right: 12px; margin-top: 5px;">
+									<img src = "img/close.png" style = "float: right; margin-left: 2px;" />
+									<img src = "img/maximize.png" style = "float: right;" />
+									<img src = "img/minimize.png" style = "float: right;" />
+								</div>
+							</div>
+			
+					<div id = "startingimage">
+						<img src = "placeholdervertical.png" style = "float: right; display: none;" draggable = "false" ondragstart = "return false;"/>
+					</div>
+							
+					<div id = "startingcolumn">
+						<div style = "font-family: silkscreenbold; font-size: 40pt; color: #e28112; max-width:70%;margin-bottom: 30px">
+							Gabriella Ruivo Lima
+						</div>
+						<div style = "font-size: 12pt; color: #DDD; paddind-top: 10px; line-height: 23px;">
+						<p id = "txt_intro"></p><br><br>
+						</div>
+						
+						<button class="navbutton" onclick = "currentPage('illustration', lang)">Illustrations</button>
+						<button class="navbutton" onclick = "currentPage('design', lang)">Design</button>
+						<button class="navbutton" disabled>Animation [soon!]</button>
+						<!-- Botar essas porra depois da SBGames
+						<button class="navbutton">Sketches</button>
+						<button class="navbutton" disabled>Comics [soon!]</button>
+						<button class="navbutton" disabled>Pixel art [soon!]</button>
+						-->
+						<!-- window.location.href='illustration.html'-->
+					</div>
+					
+					
+				</div>
+				
+				<!-- LANGUAGES -->
+				<div id = "languageswindow" class = "window">
+				
+				
+				
+							<div id = "languagestop">
+								<!-- NOME DA JANELA -->
+								<div style = "padding-top: 2px; float: left;">
+									<p id = "txt_top_lang"></p>
+								</div>
+								<!-- BOTÕES TOPO -->
+								<div style = "float: right; margin-right: 12px; margin-top: 5px;">
+									<img src = "img/close.png" style = "float: right; margin-left: 2px;" />
+									<img src = "img/maximize.png" style = "float: right;" />
+									<img src = "img/minimize.png" style = "float: right;" />
+								</div>
+							</div>
+					<br>
+					<button class="window button" onclick = "changeLang(1)" id ="ptbr">Português</button><br>
+					<button class="window button" onclick = "changeLang(0)" id = "eng">English</button>
+					
+					
+					
+					
+					<br>
+				</div>
+				
+				<!-- LINK: ABOUT & CONTACT -->
+				<div id = "abtcontactlinkwindow" class = "bluewindow">
+				
+				
+				
+							<div id = "abtcontactlinktop">
+								<!-- NOME DA JANELA -->
+								<div style = "padding-top: 2px; float: left;">
+									<p id = "txt_link_abtacontact">???.exe</p>
+								</div>
+								<!-- BOTÕES TOPO -->
+								<div style = "float: right; margin-right: 12px; margin-top: 5px;">
+									<img src = "img/close_azul.png" style = "float: right; margin-left: 2px;" />
+									<img src = "img/maximize_azul.png" style = "float: right;" />
+									<img src = "img/minimize_azul.png" style = "float: right;" />
+								</div>
+							</div>
+					<br>
+					<button class="window bluebutton" onclick = "currentPage('about', lang)"><b>About & Contact</b></button>
+					<br>
+				</div>
+				
+				
+				
+				
+			</div>
+			
+			<!-- PAGE: ABOUT -->
+			
+			<div id = "about_container">
+	
+				
+				
+				
+				<div id = "aboutwindow">
+							<div id = "aboutwindowtop">
+								<!-- NOME DA JANELA -->
+								<div style = "padding-top: 2px; float: left;">
+									ABOUT.txt
+								</div>
+								<!-- BOTÕES TOPO -->
+								<div style = "float: right; margin-right: 12px; margin-top: 5px;">
+									<img src = "img/close.png" style = "float: right; margin-left: 2px;" />
+									<img src = "img/maximize.png" style = "float: right;" />
+									<img src = "img/minimize.png" style = "float: right;" />
+								</div>
+							</div>
+			
+					<div id = "abouttext">
+						<p id = "txt_actualabout" style = "line-height: 23px;"></p><br><br>
+					</div>
+				</div>
+			
+				<div id = "drawingofme" style = "display: none;">
+				
+					<div class = "abouttop">
+								<!-- NOME DA JANELA -->
+								<div style = "padding-top: 2px; float: left;">
+									<p id = "txt_top_about"></p>
+								</div>
+								<!-- BOTÕES TOPO -->
+								<div style = "float: right; margin-right: 12px; margin-top: 5px;">
+									<img src = "img/close.png" style = "float: right; margin-left: 2px;" />
+									<img src = "img/maximize.png" style = "float: right;" />
+									<img src = "img/minimize.png" style = "float: right;" />
+								</div>
+							</div>
+					<br>
+					<!-- DESENHO DE MIM -->
+					<img src = "gebu.png" style = "float: left; display: none;" draggable = "false" ondragstart = "return false;" />vou ter que ver o tamanho final daquele desenho
+				</div>
+							
+				<div id = "email" class = "bluewindow">
+				
+					<div class = "blueabouttop">
+								<!-- NOME DA JANELA -->
+								<div style = "padding-top: 2px; float: left;">
+									<p id = "txt_top_lang">e-mail.txt</p>
+								</div>
+								<!-- BOTÕES TOPO -->
+								<div style = "float: right; margin-right: 12px; margin-top: 5px;">
+									<img src = "img/close_azul.png" style = "float: right; margin-left: 2px;" />
+									<img src = "img/maximize_azul.png" style = "float: right;" />
+									<img src = "img/minimize_azul.png" style = "float: right;" />
+								</div>
+							</div>
+					<br>
+						<!-- LINKS CONTATO -->
+						<p style = "padding: 20px; font-size: 16pt; ">gabriella.ruivo.1@gmail.com</p>
+						
+						
+				</div>
+					
+					
+				
+				
+				<!-- BACK -->
+				<div id = "desbackwindow" class = "window">
+				
+				
+				
+							<div class = "abouttop">
+								<!-- NOME DA JANELA -->
+								<div style = "padding-top: 2px; float: left;">
+									ruivo.zip
+								</div>
+								<!-- BOTÕES TOPO -->
+								<div style = "float: right; margin-right: 12px; margin-top: 5px;">
+									<img src = "img/close.png" style = "float: right; margin-left: 2px;" />
+									<img src = "img/maximize.png" style = "float: right;" />
+									<img src = "img/minimize.png" style = "float: right;" />
+								</div>
+							</div>
+					<br>
+					<button class="window button" onclick = "currentPage('index', lang)"><p id = "txt_back_about"></p></button>
+					
+					
+					
+					
+					<br>
+				</div>
+				
+				
+				
+				
+				
+				
+			</div>
+			
+			
+			
+			
+			<!-- PAGE: ILLUSTRATION -->	
+			
+			<div id = "illustration_container" draggable = "false" ondragstart = "return false;">
+				<div id = "coat">
+					<img id = "imagemampliada" style = "position: relative; max-width: 93%; max-height: 93%; display: inline-block; align-items: center;"/>
+				</div>
+				<div id = "X"><a onclick="fechar()" style = "text-decoration: none; border: 2px solid #CCC; background-color: black;">X</a></div>
+				
+				
+				
+				
+				
+				<div id = "thumbcontainer">
+					
+					<div id = "thumbnailarea">
+					
+						<!-- ORIGINAL -->
+						<div id = "original">
+						
+						
+							<!-- 01 -->
+							<div class = "thumbnailwindow" onclick = "ampliar('orig', 0)"><div class = "thumbnailcoat_orig" onmouseover = "desc('orig', 0)" onmouseout = "outdesc('orig', 0)">
+							
+									<div class = "thumbnailtop" >
+										<!-- NOME DA JANELA -->
+										<div style = "padding-top: 2px; float: left;">
+											Bubbles.png
+										</div>
+										<!-- BOTÕES TOPO -->
+										<div style = "float: right; margin-right: 12px; margin-top: 5px;">
+											<img src = "img/close_laranja.png" style = "float: right; margin-left: 2px; margin-right: -7px;" />
+											<img src = "img/maximize_laranja.png" style = "float: right;" />
+											<img src = "img/minimize_laranja.png" style = "float: right;" />
+										</div>
+									</div>
+										<!-- THUMBNAIL -->
+									<div class = "thumbnailimage_orig"></div>
+									
+										<!-- DESCRIÇÃO -->
+									<div class ="thumbnaildesc"><p class = "orig_desc"></p></div>
+							</div></div>
+							
+							<!-- 02 -->
+							<div class = "thumbnailwindow" onclick = "ampliar('orig', 1)"><div class = "thumbnailcoat_orig" onmouseover = "desc('orig', 1)" onmouseout = "outdesc('orig', 1)">
+							
+									<div class = "thumbnailtop" >
+										<!-- NOME DA JANELA -->
+										<div style = "padding-top: 2px; float: left;">
+											Cadernos.png
+										</div>
+										<!-- BOTÕES TOPO -->
+										<div style = "float: right; margin-right: 12px; margin-top: 5px;">
+											<img src = "img/close_laranja.png" style = "float: right; margin-left: 2px; margin-right: -7px;" />
+											<img src = "img/maximize_laranja.png" style = "float: right;" />
+											<img src = "img/minimize_laranja.png" style = "float: right;" />
+										</div>
+									</div>
+										<!-- THUMBNAIL -->
+									<div class = "thumbnailimage_orig"></div>
+									
+										<!-- DESCRIÇÃO -->
+									<div class ="thumbnaildesc"><p class = "orig_desc"></p></div>
+							</div></div>
+							
+							<!-- 03 -->
+							<div class = "thumbnailwindow" onclick = "ampliar('orig', 2)"><div class = "thumbnailcoat_orig" onmouseover = "desc('orig', 2)" onmouseout = "outdesc('orig', 2)">
+							
+									<div class = "thumbnailtop" >
+										<!-- NOME DA JANELA -->
+										<div style = "padding-top: 2px; float: left;">
+											O holy mother.png
+										</div>
+										<!-- BOTÕES TOPO -->
+										<div style = "float: right; margin-right: 12px; margin-top: 5px;">
+											<img src = "img/close_laranja.png" style = "float: right; margin-left: 2px; margin-right: -7px;" />
+											<img src = "img/maximize_laranja.png" style = "float: right;" />
+											<img src = "img/minimize_laranja.png" style = "float: right;" />
+										</div>
+									</div>
+										<!-- THUMBNAIL -->
+									<div class = "thumbnailimage_orig"></div>
+									
+										<!-- DESCRIÇÃO -->
+									<div class ="thumbnaildesc"><p class = "orig_desc"></p></div>
+							</div></div>
+							
+							<!-- 04 -->
+							<div class = "thumbnailwindow" onclick = "ampliar('orig', 3)"><div class = "thumbnailcoat_orig" onmouseover = "desc('orig', 3)" onmouseout = "outdesc('orig', 3)">
+							
+									<div class = "thumbnailtop" >
+										<!-- NOME DA JANELA -->
+										<div style = "padding-top: 2px; float: left;">
+											Exhausted.png
+										</div>
+										<!-- BOTÕES TOPO -->
+										<div style = "float: right; margin-right: 12px; margin-top: 5px;">
+											<img src = "img/close_laranja.png" style = "float: right; margin-left: 2px; margin-right: -7px;" />
+											<img src = "img/maximize_laranja.png" style = "float: right;" />
+											<img src = "img/minimize_laranja.png" style = "float: right;" />
+										</div>
+									</div>
+										<!-- THUMBNAIL -->
+									<div class = "thumbnailimage_orig"></div>
+									
+										<!-- DESCRIÇÃO -->
+									<div class ="thumbnaildesc"><p class = "orig_desc"></p></div>
+							</div></div>
+							
+							
+							
+						</div>
+						
+						
+						<!-- FANART -->
+						<div id = "fanart">
+					
+							<!-- 01 -->
+							<div class = "thumbnailwindow" onclick = "ampliar('fan', 0)"><div class = "thumbnailcoat_fan" onmouseover = "desc('fan', 0)" onmouseout = "outdesc('fan', 0)">
+							
+									<div class = "thumbnailtop" >
+										<!-- NOME DA JANELA -->
+										<div style = "padding-top: 2px; float: left;">
+											jojo's bizarre adventure.png
+										</div>
+										<!-- BOTÕES TOPO -->
+										<div style = "float: right; margin-right: 12px; margin-top: 5px;">
+											<img src = "img/close_laranja.png" style = "float: right; margin-left: 2px; margin-right: -7px;" />
+											<img src = "img/maximize_laranja.png" style = "float: right;" />
+											<img src = "img/minimize_laranja.png" style = "float: right;" />
+										</div>
+									</div>
+										<!-- THUMBNAIL -->
+									<div class = "thumbnailimage_fan"></div>
+									
+										<!-- DESCRIÇÃO -->
+									<div class ="thumbnaildesc"><p class = "fan_desc"></p></div>
+							</div></div>
+							
+							<!-- 02 -->
+							<div class = "thumbnailwindow" onclick = "ampliar('fan', 1)"><div class = "thumbnailcoat_fan" onmouseover = "desc('fan', 1)" onmouseout = "outdesc('fan', 1)">
+							
+									<div class = "thumbnailtop" >
+										<!-- NOME DA JANELA -->
+										<div style = "padding-top: 2px; float: left;">
+											mother3.png
+										</div>
+										<!-- BOTÕES TOPO -->
+										<div style = "float: right; margin-right: 12px; margin-top: 5px;">
+											<img src = "img/close_laranja.png" style = "float: right; margin-left: 2px; margin-right: -7px;" />
+											<img src = "img/maximize_laranja.png" style = "float: right;" />
+											<img src = "img/minimize_laranja.png" style = "float: right;" />
+										</div>
+									</div>
+										<!-- THUMBNAIL -->
+									<div class = "thumbnailimage_fan"></div>
+									
+										<!-- DESCRIÇÃO -->
+									<div class ="thumbnaildesc"><p class = "fan_desc"></p></div>
+							</div></div>
+							
+							<!-- 03 -->
+							<div class = "thumbnailwindow" onclick = "ampliar('fan', 2)"><div class = "thumbnailcoat_fan" onmouseover = "desc('fan', 2)" onmouseout = "outdesc('fan', 2)">
+							
+									<div class = "thumbnailtop">
+										<!-- NOME DA JANELA -->
+										<div style = "padding-top: 2px; float: left;">
+											mob psycho 100.png
+										</div>
+										<!-- BOTÕES TOPO -->
+										<div style = "float: right; margin-right: 12px; margin-top: 5px;">
+											<img src = "img/close_laranja.png" style = "float: right; margin-left: 2px; margin-right: -7px;" />
+											<img src = "img/maximize_laranja.png" style = "float: right;" />
+											<img src = "img/minimize_laranja.png" style = "float: right;" />
+										</div>
+									</div>
+										<!-- THUMBNAIL -->
+									<div class = "thumbnailimage_fan"></div>
+											
+										<!-- DESCRIÇÃO -->
+									<div class ="thumbnaildesc"><p class = "fan_desc"></p></div>
+							</div></div>
+							
+							
+							
+							
+						<!-- FIM DAS ARTES -->
+						</div>
+					</div>
+				</div>
+					
+					<!-- NAV -->
+					<div id = "origfanwindow" class = "window">
+								<div id = "origfantop">
+									<!-- NOME DA JANELA -->
+									<div style = "padding-top: 2px; float: left;">
+										<p id = "txt_top_illust"></p>
+									</div>
+									<!-- BOTÕES TOPO -->
+									<div style = "float: right; margin-right: 12px; margin-top: 5px;">
+										<img src = "img/close.png" style = "float: right; margin-left: 2px;" />
+										<img src = "img/maximize.png" style = "float: right;" />
+										<img src = "img/minimize.png" style = "float: right;" />
+									</div>
+								</div>
+						<br>
+						<button class="window button" onclick = "illustTab('original'); " id = "button_orig">Original</button><br>
+						<button class="window button" onclick = "illustTab('fanart')" id = "button_fan">Fanart</button>
+						
+						<br><br>
+						<button class="window button" onclick = "currentPage('index', lang)"><p id = "txt_back_illust"></p></button>
+						<br>
+					</div>
+			</div>
+			
+			
+			
+			<!-- PAGE: DESIGN -->	
+			
+			<div id = "design_container" draggable = "false" ondragstart = "return false;">
+				<div id = "coat">
+					<img id = "imagemampliada" style = "position: relative; max-width: 93%; max-height: 93%; display: inline-block; align-items: center;"/>
+				</div>
+				<div id = "X"><a onclick="fechar()" style = "text-decoration: none; border: 2px solid #CCC; background-color: black;">X</a></div>
+				
+				
+				<div id = "thumbcontainer">
+					
+					<div id = "thumbnailarea">
+					
+						<!-- 01 -->
+						<div class = "designwindow">
+						
+								<div class = "designtop">
+									<!-- NOME DA JANELA -->
+									<div style = "padding-top: 2px; float: left;">
+										animaizinhas.zip
+									</div>
+									<!-- BOTÕES TOPO -->
+									<div style = "float: right; margin-right: 12px; margin-top: 5px;">
+										<img src = "img/close_laranja.png" style = "float: right; margin-left: 2px; margin-right: -7px;" />
+										<img src = "img/maximize_laranja.png" style = "float: right;" />
+										<img src = "img/minimize_laranja.png" style = "float: right;" />
+									</div>
+								</div>
+									<!-- IMAGES -->
+								<div class = "designimage"><img src="design/projcadernos_01.png" draggable = "false" ondragstart = "return false;"/></div>
+								
+									<!-- DESCRIÇÃO -->
+								<div class = "design_desc">
+									<p style = "font-family: silkscreenbold; font-size: 40pt; color: #e28112; text-align: center;">
+										Animaizinhas
+									</p>
+										<br><p style = "font-family: silkscreenbold; font-size: 25pt; color: #e28112; text-align: center;">(2019)</p>
+									<br>
+									[WORKING TITLE]
+									<br>
+									<br>
+									<br>
+									<img src="design/projcadernos_03.png" style = "float: left; max-height: 300px; margin: 0 30px 30px 0;" draggable = "false" ondragstart = "return false;" />
+									Marca de cadernos estrelando uma gatinha fashionista levemente elétrica, uma corujinha <i>cool</i> que talvez abuse demais do filtro preto-e-branco, e uma ratinha skatista em dúvida se gosta mais de filmes de terror ou de comédia romântica.
+									<br><br>
+									Acompanhe suas aventuras jogando videogame, tirando selfies dançando, aprendendo a tocar instrumentos novos ou caindo do skate tentando imitar o <i>backflip</i> de sua amiga - pelo menos a foto do roxo no joelho vai dar uma boa memória!
+									<br><br>
+									Cadernos tamanho A5, 96 folhas sem pauta. Possuem ilustração em aquarela na capa dura e uma ficha de adesivos.
+									<br><br>
+									
+									<img src="design/projcadernos_02.png" style = "text-align: center; max-width: 100%;"  draggable = "false" ondragstart = "return false;"/>
+									
+									
+									</div>
+						</div>
+						
+						<!-- 02 -->
+						<div class = "designwindow">
+						
+								<div class = "designtop">
+									<!-- NOME DA JANELA -->
+									<div style = "padding-top: 2px; float: left;">
+										ouca-me.zip
+									</div>
+									<!-- BOTÕES TOPO -->
+									<div style = "float: right; margin-right: 12px; margin-top: 5px;">
+										<img src = "img/close_laranja.png" style = "float: right; margin-left: 2px; margin-right: -7px;" />
+										<img src = "img/maximize_laranja.png" style = "float: right;" />
+										<img src = "img/minimize_laranja.png" style = "float: right;" />
+									</div>
+								</div>
+									<!-- IMAGES -->
+								<div class = "designimage"><img src="design/tel_02.png"  draggable = "false" ondragstart = "return false;"/></div>
+								
+									<!-- DESCRIÇÃO -->
+								<div class = "design_desc">
+									<p style = "font-family: silkscreenbold; font-size: 40pt; color: #e28112; text-align: center;">
+										Ouca-me
+										</p>
+										<br><p style = "font-family: silkscreenbold; font-size: 25pt; color: #e28112; text-align: center;">(2018)</p>
+									<br>
+									<br>
+									<br>
+									<img src="design/tel_01.jpg" style = "float: right; max-width: 350px; margin: 0 0px 30px 30px;"  draggable = "false" ondragstart = "return false;"/>
+									"OUÇA-ME" é um projeto idealizado na disciplina DSG 1002 (Projeto Básico - Planejamento) do curso de Design da PUC-Rio, co-criado com Marina Japiassú.
+									<br><br>
+									Comic ilustrando a forma de uso desenhada por mim. 
+									<br>
+									Texto e diagramação por Marina Japiassú.
+									<br>
+									Protótipo funcional construído por ambas.
+									<br><br>
+									O projeto foi selecionado para a Semana de Design 2019 na PUC-Rio.
+									
+									
+									
+									</div>
+						</div>
+						
+						<!-- FIM -->
+				</div>
+					
+					<!-- NAV -->
+					<div id = "desbackwindow" class = "window">
+								<div id = "desbacktop">
+									<!-- NOME DA JANELA -->
+									<div style = "padding-top: 2px; float: left;">
+										design.zip
+									</div>
+									<!-- BOTÕES TOPO -->
+									<div style = "float: right; margin-right: 12px; margin-top: 5px;">
+										<img src = "img/close.png" style = "float: right; margin-left: 2px;" />
+										<img src = "img/maximize.png" style = "float: right;" />
+										<img src = "img/minimize.png" style = "float: right;" />
+									</div>
+								</div>
+						<br>
+						<button class="window button" onclick = "currentPage('index', lang)"><p id = "txt_back_design"></p></button>
+						<br>
+					</div>
+			</div>
+			
+			
+			<!-- PAGE: ABOUT -->
+			
+			<div id ="about_container">
+			
+			
+			</div>
+			
+			
 	</body>
