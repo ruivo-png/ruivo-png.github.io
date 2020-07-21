@@ -70,13 +70,6 @@ function illustTab(i) {
 		document.getElementById("button_orig").disabled = true;
 		document.getElementById("button_fan").disabled = false;
 	}
-	
-	if (i == 'fanart') {
-		document.getElementById("original").style.display = "none";
-		document.getElementById("fanart").style.display = "inline";
-		document.getElementById("button_fan").disabled = true;
-		document.getElementById("button_orig").disabled = false;
-	}
 }
 
 function changeLang(language) {
@@ -171,9 +164,6 @@ function thumbnails_illust() {
 	for (n = 0; n < max_orig; n++)
 		document.getElementsByClassName("thumbnailimage_orig")[n].style.backgroundImage = orig_thumb[n];
 	
-	// fanart
-	for (n = 0; n < max_fan; n++)
-		document.getElementsByClassName("thumbnailimage_fan")[n].style.backgroundImage = fan_thumb[n];
 }
 
 function desc(tipo, i) {
@@ -183,12 +173,6 @@ function desc(tipo, i) {
 		document.getElementsByClassName("orig_desc")[i].style.opacity = "1";
 		document.getElementsByClassName("orig_desc")[i].innerHTML = orig_desc[i];
 	}
-	if (tipo == "fan") {
-		document.getElementsByClassName("thumbnailcoat_fan")[i].style.background = "rgba(0, 0, 0, 0.8)";
-		document.getElementsByClassName("thumbnailimage_fan")[i].style.opacity = "0.2";
-		document.getElementsByClassName("fan_desc")[i].style.opacity = "1";
-		document.getElementsByClassName("fan_desc")[i].innerHTML = fan_desc[i];
-	}
 }
 
 function outdesc(tipo, i) {
@@ -197,11 +181,6 @@ function outdesc(tipo, i) {
 		document.getElementsByClassName("thumbnailcoat_orig")[i].style.background = "rgba(0, 0, 0, 0)";
 		document.getElementsByClassName("thumbnailimage_orig")[i].style.opacity = "1";
 		document.getElementsByClassName("orig_desc")[i].style.opacity = "0";
-	}
-	if (tipo == "fan") {
-		document.getElementsByClassName("thumbnailcoat_fan")[i].style.background = "rgba(0, 0, 0, 0)";
-		document.getElementsByClassName("thumbnailimage_fan")[i].style.opacity = "1";
-		document.getElementsByClassName("fan_desc")[i].style.opacity = "0";
 	}
 }
 
@@ -227,8 +206,7 @@ function ampliar (tipo, i) {
 	if (tipo == "orig")
 		document.getElementById("imagemampliada").src = orig_full[i];
 	
-	if (tipo == "fan")
-		document.getElementById("imagemampliada").src = fan_full[i];
+	
 	
 	
 }
